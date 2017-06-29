@@ -8,4 +8,4 @@ Each FASTQ file contains multiple lines of sequence data and corresponding quail
 
 <p>This script can work directly with files.fa files. Paste file path after directed by script. The script returns the total quality score added up for each read it also tells you the average quality score for the enitire file</p>
 
-<p>to use this script drag and drop your file_path/file.fa into the console.</p>
+<p>To use this script drag and drop your file_path/file.fa into the console.</p>
