@@ -24,4 +24,4 @@ Each FASTQ file contains multiple lines of sequence data and corresponding quail
 
 <h4>To use the script</h4>
 
-<p>This script can work directly with files.fa files. To use this script drag and drop your file_path/file.fa into the console.</p>
+<p>This script can work directly with FASTQ files: file.fa. To use this script drag and drop your file_path/file.fa into the console.</p>
