@@ -38,7 +38,7 @@ File.open(sp1) do |handle|
       record_score = 0
       total_nucleotides = 0
 
-      #iterates over teh array and assigns a number value
+      #iterates over the array and assigns a number value
       #adds up array
     array.each do |letter|
       total_nucleotides = array.count
@@ -46,8 +46,9 @@ File.open(sp1) do |handle|
     end
       quaility_percent = 0
       quaility_percent = ((record_score.to_f/(total_nucleotides.to_f*93))*100).round
+
       # quaility_percent = (record_score/(total_nucleotides*93))*100
-      puts "Snippet: #{record.name} \nScore: #{record_score} \nPercent of Total Quality: #{quaility_percent}\nQuality: #{record.quality}\ntotal bases: #{total_nucleotides}\n\n"
+      puts "Record Name: #{record.name} \nTotal Quality Score for Read: #{record_score} \nPercent of Total Possible Quality: #{quaility_percent}\nASCII Score: #{record.quality}\nTotal Number of Bases: #{total_nucleotides}\n\n"
       qual_array.push(record_score)
       avg_array.push(quaility_percent)
     end
@@ -56,9 +57,9 @@ File.open(sp1) do |handle|
     #calculates average quality score
     calculations = Dna.new handle
     record_total = calculations.count
-    puts "total reads: #{record_total}"
+    puts "Total Reads: #{record_total}"
     total = qual_array.inject(0){|sum,x| sum + x}
     avg_total = avg_array.inject(0){|sum,x| sum + x}
     avg = (avg_total / record_total)
-    puts "avg percent: #{avg}"
+    puts "Avg Percent of Total Possible Quality: #{avg}"
   end
