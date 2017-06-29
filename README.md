@@ -12,7 +12,7 @@ Each FASTQ file contains multiple lines of sequence data and corresponding quail
 <li>Total Quality Score for the Read</li>
 <li>Percent of Total Possible Quality</li>
 <li>ASCII Score</li>
-<li>Total Number of Bases: 31</li>
+<li>Total Number of Bases</li>
 </ul>
 
 <h4>As well as</h4>
