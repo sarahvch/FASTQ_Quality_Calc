@@ -5,7 +5,7 @@ Each FASTQ file contains multiple lines of sequence data and corresponding quail
 
 <p><b>Quaility</b></p>
 <p>Quality is the probability that the base is incorrect. It is given in ASCII characters from ascii 33 to 126 (http://ascii.cl/). The exclamation mark "!" representes the lowest quality while the tilde "~" is the highest quality. This script assigns a number to each quality score, 0 being the lowest quality score and 93 being the highest quailty score. This follows the Sanger format of a Phred quality score</p>
-<h3>The Scrpt Returns</h3>
+<h3>The Script Returns</h3>
 <h4>For each Read</h4>
 <ul>
 <li>Record Name</li>
